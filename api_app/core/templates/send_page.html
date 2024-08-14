@@ -7,10 +7,12 @@
 </head>
 <body>
     <form method="post">
+        {% csrf_token %}
         <label>Enter a phone number</label>
         <textarea name="to"></textarea>
         <label>Enter the text</label>
         <textarea name="text"></textarea>
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>
